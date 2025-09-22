@@ -13,6 +13,7 @@ public class ReverseInt{
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Number :");
         int number = sc.nextInt();
 
         int original= number;
@@ -23,6 +24,10 @@ public class ReverseInt{
             reversed= reversed*10+digit;
             number=number/10;
         }
+
+        System.out.println("Original Number: "+ original);
+        System.out.println("Reversed Number: "+reversed);
+
         checkReverse(original, reversed);
         
         }
